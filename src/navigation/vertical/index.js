@@ -4,4 +4,4 @@ import teams from './teams'
 import ticket from './tickets'
 
 // ** Merge & Export
-export default [...dashboards, ...teams, ...ticket]
+export default [...dashboards, ...ticket, ...teams]
