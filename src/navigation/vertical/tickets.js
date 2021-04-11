@@ -8,15 +8,15 @@ export default [
     id: 'ticketAll',
     title: 'All tickets',
     icon: <CheckSquare size={20} />,
-    navLink: '/apps/todo',
-    badge: 'light-info',
+    navLink: '/ticket/all',
+    badge: 'light-warning',
     badgeText: '12'
   },
   {
     id: 'ticketMy',
     title: 'My tickets',
     icon: <CheckSquare size={20} />,
-    navLink: '/apps/todo',
+    navLink: '/ticket/my',
     badge: 'light-warning',
     badgeText: '2'
   },
@@ -26,16 +26,16 @@ export default [
     icon: <FileText size={20} />,
     children: [
       {
-        id: 'ticketMobads',
-        title: 'Mobads',
+        id: 'ticketAdriverCorp',
+        title: 'Adriver-Corp',
         icon: <Circle size={12} />,
-        navLink: '/apps/invoice/list'
+        navLink: '#'
       },
       {
-        id: 'ticketAdriver',
-        title: 'Adriver',
+        id: 'ticketTPM',
+        title: 'T.P.M.',
         icon: <Circle size={12} />,
-        navLink: '/apps/invoice/preview'
+        navLink: '#'
       }
     ]
   }

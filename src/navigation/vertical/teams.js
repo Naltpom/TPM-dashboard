@@ -1,68 +1,115 @@
-import { Info, Edit, FileText, Circle, UserPlus, Users } from 'react-feather'
+import { Info, Edit, FileText, Folder, UserPlus, Users } from 'react-feather'
 
 export default [
   {
     header: 'My Teams'
   },
   {
-    id: 'mobads',
-    title: 'Mobads',
+    id: 'adriverCorp',
+    title: 'Adriver-Corp',
     icon: <FileText size={20} />,
     children: [
       {
-        id: 'mobadsMembersList',
-        title: 'Members',
-        icon: <Users size={12} />,
-        navLink: '/apps/invoice/list'
-      },
-      {
-        id: 'mobadsPreview',
+        id: 'adriverCorpPreview',
         title: 'Preview',
         icon: <Info size={12} />,
-        navLink: '/apps/invoice/preview'
+        navLink: '/team/view'
       },
       {
-        id: 'mobadsEdit',
+        id: 'adriverCorpMembersList',
+        title: 'Members',
+        icon: <Users size={12} />,
+        navLink: '/team/members/list'
+      },
+      {
+        id: 'adriverCorpEdit',
         title: 'Gestion (leader)',
         icon: <Edit size={12} />,
-        navLink: '/apps/invoice/edit'
+        navLink: '/team/members/edit'
       },
       {
-        id: 'mobadsAdd',
+        id: 'adriverCorpAdd',
         title: 'Invite (leader)',
         icon: <UserPlus size={12} />,
-        navLink: '/apps/invoice/add'
+        navLink: '/team/members/invite'
+      },
+      {
+        id: 'adriverCorpApps',
+        title: 'Applications',
+        icon: <Folder size={12} />,
+        badge: 'light-info',
+        badgeText: '9',
+        children: [
+          {
+            id: 'appACNotifier',
+            title: 'Notifier',
+            navLink: '/team/app/notifier'
+          },
+          {
+            id: 'appMobads',
+            title: 'Mobads',
+            navLink: '/team/app/mobads',
+            badge: 'light-info',
+            badgeText: '5'
+          },
+          {
+            id: 'appAdriver',
+            title: 'Adriver',
+            navLink: '/team/app/adriver',
+            badge: 'light-info',
+            badgeText: '3'
+          }
+        ]
       }
     ]
   },
   {
-    id: 'adriver',
-    title: 'Adriver',
+    id: 'tpm',
+    title: 'T.P.M.',
     icon: <FileText size={20} />,
     children: [
       {
-        id: 'adriverMembersList',
-        title: 'Members',
-        icon: <Circle size={12} />,
-        navLink: '/apps/invoice/list'
-      },
-      {
-        id: 'adriverPreview',
+        id: 'atpmPreview',
         title: 'Preview',
-        icon: <Circle size={12} />,
-        navLink: '/apps/invoice/preview'
+        icon: <Info size={12} />,
+        navLink: '#'
       },
       {
-        id: 'adriverEdit',
+        id: 'tpmMembersList',
+        title: 'Members',
+        icon: <Users size={12} />,
+        navLink: '#'
+      },
+      {
+        id: 'tpmEdit',
         title: 'Gestion (leader)',
-        icon: <Circle size={12} />,
-        navLink: '/apps/invoice/edit'
+        icon: <Edit size={12} />,
+        navLink: '/'
       },
       {
-        id: 'adriverAdd',
+        id: 'tpmAdd',
         title: 'Invite (leader)',
-        icon: <Circle size={12} />,
-        navLink: '/apps/invoice/add'
+        icon: <UserPlus size={12} />,
+        navLink: '/'
+      },
+      {
+        id: 'tpmApps',
+        title: 'Applications',
+        icon: <Folder size={12} />,
+        badge: 'light-info',
+        badgeText: '2',
+        children: [
+          {
+            id: 'appTPMServer',
+            title: 'API',
+            navLink: '#'
+          },
+          {
+            id: 'appTpmDashboard',
+            title: 'Dashboard',
+            navLink: '#'
+          }
+        ]
       }
     ]
   }

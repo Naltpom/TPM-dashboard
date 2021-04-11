@@ -30,8 +30,9 @@ const NavbarUser = props => {
       </ul>
       <div className='bookmark-wrapper d-flex align-items-center'>
         <NavItem className='d-block'>
-          <NavLink className='nav-link-style'>
-            <PlusSquare />
+          <NavLink className='nav-link-style d-flex align-items-center' href='/ticket/create'>
+            <PlusSquare className="mr-1"/>
+            <span className='d-none d-sm-block'>Add Ticket</span>
           </NavLink>
         </NavItem>
       </div>
