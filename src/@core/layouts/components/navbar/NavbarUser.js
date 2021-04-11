@@ -1,6 +1,7 @@
 // ** Dropdowns Imports
 import { Fragment } from 'react'
 import UserDropdown from './UserDropdown'
+import { Link } from 'react-router-dom'
 
 // ** Third Party Components
 import { Sun, Moon, Menu, PlusSquare } from 'react-feather'
@@ -30,9 +31,9 @@ const NavbarUser = props => {
       </ul>
       <div className='bookmark-wrapper d-flex align-items-center'>
         <NavItem className='d-block'>
-          <NavLink className='nav-link-style d-flex align-items-center' href='/ticket/create'>
-            <PlusSquare className="mr-1"/>
-            <span className='d-none d-sm-block'>Add Ticket</span>
+          <NavLink className='d-flex align-items-center' href='/ticket/create'>
+            <PlusSquare className="mr-01"/>
+            <span className='d-none d-lg-block'>Add Ticket</span>
           </NavLink>
         </NavItem>
       </div>
