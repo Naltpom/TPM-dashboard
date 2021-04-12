@@ -104,13 +104,13 @@ const RegisterV1 = () => {
                   label={<RememberMe />}
                 />
               </FormGroup>
-              <Button.Ripple color='primary' block>
+              <Button.Ripple tag={Link} to='/' color='primary' block>
                 Sign up
               </Button.Ripple>
             </Form>
             <p className='text-center mt-2'>
               <span className='mr-25'>Already have an account?</span>
-              <Link to='/pages/login-v1'>
+              <Link to='/login'>
                 <span>Sign in instead</span>
               </Link>
             </p>

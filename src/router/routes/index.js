@@ -64,7 +64,7 @@ const Routes = [
 
   {
     path: '/login',
-    component: lazy(() => import('../../views/authentication/LoginV1')),
+    component: lazy(() => import('../../views/authentication/Login')),
     layout: 'BlankLayout',
     meta: {
       authRoute: true
@@ -72,7 +72,7 @@ const Routes = [
   },
   {
     path: '/register',
-    component: lazy(() => import('../../views/authentication/RegisterV1')),
+    component: lazy(() => import('../../views/authentication/Register')),
     layout: 'BlankLayout'
   },
   {

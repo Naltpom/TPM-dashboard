@@ -77,7 +77,7 @@ const LoginV1 = () => {
                   <Label className='form-label' for='login-password'>
                     Password
                   </Label>
-                  <Link to='/pages/forgot-password-v1'>
+                  <Link to='/forgot-password-v1'>
                     <small>Forgot Password?</small>
                   </Link>
                 </div>
@@ -86,13 +86,13 @@ const LoginV1 = () => {
               <FormGroup>
                 <CustomInput type='checkbox' className='custom-control-Primary' id='remember-me' label='Remember Me' />
               </FormGroup>
-              <Button.Ripple color='primary' block>
+              <Button.Ripple tag={Link} to='/' color='primary' block>
                 Sign in
               </Button.Ripple>
             </Form>
             <p className='text-center mt-2'>
               <span className='mr-25'>New on our platform?</span>
-              <Link to='/pages/register-v1'>
+              <Link to='/register'>
                 <span>Create an account</span>
               </Link>
             </p>
