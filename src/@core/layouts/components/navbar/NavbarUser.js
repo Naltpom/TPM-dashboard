@@ -47,5 +47,5 @@ const NavbarUser = props => {
       </ul>
     </Fragment>
   )
-}
+} 
 export default NavbarUser
