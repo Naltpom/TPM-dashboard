@@ -1,4 +1,6 @@
+
 import AvatarGroup from '@components/avatar-group'
+import Avatar from '@components/avatar'
 import avatar1 from '@src/assets/images/portrait/small/avatar-s-5.jpg'
 import avatar2 from '@src/assets/images/portrait/small/avatar-s-6.jpg'
 import avatar3 from '@src/assets/images/portrait/small/avatar-s-7.jpg'
@@ -14,6 +16,30 @@ const avatarGroupData1 = [
     img: avatar1,
     imgHeight: 26,
     imgWidth: 26
+  },
+  {
+    title: 'Michael',
+    img: avatar3,
+    imgHeight: 26,
+    imgWidth: 26
+  },
+  {
+    title: 'Lavinia',
+    img: avatar4,
+    imgHeight: 26,
+    imgWidth: 26
+  },
+  {
+    title: 'Lavinia',
+    img: avatar6,
+    imgHeight: 26,
+    imgWidth: 26
+  },
+  {
+    title: 'Lavinia',
+    img: avatar5,
+    imgHeight: 26,
+    imgWidth: 26
   }
 ]
 
@@ -23,6 +49,18 @@ const avatarGroupData2 = [
     img: avatar2,
     imgHeight: 26,
     imgWidth: 26
+  },
+  {
+    title: 'Lavinia',
+    img: avatar6,
+    imgHeight: 26,
+    imgWidth: 26
+  },
+  {
+    title: 'Lavinia',
+    img: avatar4,
+    imgHeight: 26,
+    imgWidth: 26
   }
 ]
 
@@ -30,6 +68,24 @@ const avatarGroupData3 = [
   {
     title: 'Michael',
     img: avatar3,
+    imgHeight: 26,
+    imgWidth: 26
+  },
+  {
+    title: 'Lavinia',
+    img: avatar4,
+    imgHeight: 26,
+    imgWidth: 26
+  },
+  {
+    title: 'Patrick',
+    img: avatar2,
+    imgHeight: 26,
+    imgWidth: 26
+  },
+  {
+    title: 'Lavinia',
+    img: avatar6,
     imgHeight: 26,
     imgWidth: 26
   }
@@ -50,6 +106,12 @@ const avatarGroupData5 = [
     img: avatar5,
     imgHeight: 26,
     imgWidth: 26
+  },  
+  {
+    title: 'Lavinia',
+    img: avatar6,
+    imgHeight: 26,
+    imgWidth: 26
   }
 ]
 
@@ -59,16 +121,28 @@ const avatarGroupData6 = [
     img: avatar6,
     imgHeight: 26,
     imgWidth: 26
+  },
+  {
+    title: 'Lavinia',
+    img: avatar1,
+    imgHeight: 26,
+    imgWidth: 26
+  },
+  {
+    title: 'Lavinia',
+    img: avatar2,
+    imgHeight: 26,
+    imgWidth: 26
   }
 ]
 
-const TableTickets = () => {
+const TableTeam = () => {
   return (
     <Table hover responsive>
       <thead>
         <tr>
-          <th>Givenname Familyname</th>
-          <th>Profile picture</th>
+          <th>Owner</th>
+          <th>Members</th>
           <th>Roles</th>
           <th>Actions</th>
         </tr>
@@ -80,12 +154,12 @@ const TableTickets = () => {
             <AvatarGroup data={avatarGroupData1} />
           </td>
           <td>
-            <Badge pill color='light-primary' className='mr-1'>
-              Leader
+            <Badge pill color='light-danger' className='mr-1'>
+              URGENT
             </Badge>
           </td>
           <td>
-            <BookOpen className='mx-1 text-success' size={15} />
+            <Avatar className="mx-1" color='light-success' icon={<BookOpen size={15} />} />
           </td>
 
         </tr>
@@ -95,12 +169,12 @@ const TableTickets = () => {
             <AvatarGroup data={avatarGroupData2} />
           </td>
           <td>
-            <Badge pill color='light-success' className='mr-1'>
-              Invited
+            <Badge pill color='light-info' className='mr-1'>
+              MEDIUM
             </Badge>
           </td>
           <td>
-            <BookOpen className='mx-1 text-success' size={15} />
+            <Avatar className="mx-1" color='light-success' icon={<BookOpen size={15} />} />
           </td>
         </tr>
         <tr>
@@ -109,12 +183,12 @@ const TableTickets = () => {
             <AvatarGroup data={avatarGroupData3} />
           </td>
           <td>
-            <Badge pill color='light-info' className='mr-1'>
-              Customer
+            <Badge pill color='light-warning' className='mr-1'>
+              HIGHT
             </Badge>
           </td>
           <td>
-            <BookOpen className='mx-1 text-success' size={15} />
+            <Avatar className="mx-1" color='light-success' icon={<BookOpen size={15} />} />
           </td>
         </tr>
         <tr>
@@ -123,12 +197,12 @@ const TableTickets = () => {
             <AvatarGroup data={avatarGroupData4} />
           </td>
           <td>
-            <Badge pill color='light-secondary' className='mr-1'>
-              Wainting
+            <Badge pill color='light-danger' className='mr-1'>
+              URGENT
             </Badge>
           </td>
           <td>
-            <BookOpen className='mx-1 text-success' size={15} />
+            <Avatar className="mx-1" color='light-success' icon={<BookOpen size={15} />} />
           </td>
         </tr>
         <tr>
@@ -137,12 +211,12 @@ const TableTickets = () => {
             <AvatarGroup data={avatarGroupData5} />
           </td>
           <td>
-            <Badge pill color='light-warning' className='mr-1'>
-              Member
+            <Badge pill color='light-danger' className='mr-1'>
+              URGENT
             </Badge>
           </td>
           <td>
-            <BookOpen className='mx-1 text-success' size={15} />
+            <Avatar className="mx-1" color='light-success' icon={<BookOpen size={15} />} />
           </td>
         </tr>
         <tr>
@@ -151,12 +225,12 @@ const TableTickets = () => {
             <AvatarGroup data={avatarGroupData6} />
           </td>
           <td>
-            <Badge pill color='light-warning' className='mr-1'>
-              Member
+            <Badge pill color='light-success' className='mr-1'>
+              LOW
             </Badge>
           </td>
           <td>
-            <BookOpen className='mx-1 text-success' size={15} />
+            <Avatar className="mx-1" color='light-success' icon={<BookOpen size={15} />} />
           </td>
         </tr>
       </tbody>
@@ -164,4 +238,4 @@ const TableTickets = () => {
   )
 }
 
-export default TableTickets
+export default TableTeam

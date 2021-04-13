@@ -28,14 +28,7 @@ const Home = () => {
           <StatsCard cols={{ lg: '3', md: '4', sm: '6'}} />
         </Col>
       </Row>
-      <Row className='match-height'>
-        <Col sm='12'>
-          <Card title='Table Dashboard' code={tableHoverAnimation, tableResponsive} >
-          <CardHeader><CardTitle>Table Dashboard</CardTitle></CardHeader>
-            <TableDashboard />
-          </Card>
-        </Col>
-      </Row>
+
       <Card>
         <CardHeader>
           <CardTitle>Want to integrate JWT? 🔒</CardTitle>

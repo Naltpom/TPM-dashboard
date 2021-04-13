@@ -1,6 +1,5 @@
 import { Row, Col, Card, CardHeader, CardBody, CardTitle, CardText, CardLink } from 'reactstrap'
-import StatsCard from '@src/views/ui-elements/cards/statistics/StatsCard'
-import TableTeam from '@src/views/ui-elements/tables/TableTeam'
+import TableTickets from '@src/views/ui-elements/tables/TableTickets'
 import {
   tableBasic,
   tableDark,
@@ -31,12 +30,7 @@ const AllTickets = () => {
         <Col sm='12'>
           <Card title='Table Team' code={tableHoverAnimation, tableResponsive} >
           <CardHeader> <CardTitle>Table Team</CardTitle></CardHeader>
-            <CardBody>
-              <CardText>
-                Use prop <code>responsive</code> to make your table responsive.
-              </CardText>
-            </CardBody>
-            <TableTeam />
+            <TableTickets />
           </Card>
         </Col>
       </Row>
