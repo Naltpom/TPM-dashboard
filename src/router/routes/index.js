@@ -25,10 +25,6 @@ const Routes = [
     component: lazy(() => import('../../views/teams/Members'))
   },
   {
-    path: '/team/members/edit',
-    component: lazy(() => import('../../views/teams/Gestion'))
-  },
-  {
     path: '/team/members/invite',
     component: lazy(() => import('../../views/teams/Invite'))
   },

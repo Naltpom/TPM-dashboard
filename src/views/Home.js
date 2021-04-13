@@ -1,27 +1,41 @@
-import { Card, CardHeader, CardBody, CardTitle, CardText, CardLink } from 'reactstrap'
-
+import { Row, Col, Card, CardHeader, CardBody, CardTitle, CardText, CardLink } from 'reactstrap'
+import { Fragment, useEffect } from 'react'
+import prism from 'prismjs'
+import StatsCard from '@src/views/ui-elements/cards/statistics/StatsCard'
+import TableDashboard from './ui-elements/tables/TableDashboard'
+import {
+  tableBasic,
+  tableDark,
+  tableTheadOptions,
+  tableStriped,
+  tableStripedDark,
+  tableBordered,
+  tableBorderless,
+  tableContextual,
+  tableHover,
+  tableSmall,
+  tableHoverAnimation,
+  tableResponsive
+} from './ui-elements/tables/TableSourceCode'
 const Home = () => {
+  useEffect(() => {
+    prism.highlightAll()
+  })
   return (
     <div>
-      <Card>
-        <CardHeader>
-          <CardTitle>Kick start your project 🚀</CardTitle>
-        </CardHeader>
-        <CardBody>
-          <CardText>All the best for your new project.</CardText>
-          <CardText>
-            Please make sure to read our{' '}
-            <CardLink
-              href='https://pixinvent.com/demo/vuexy-react-admin-dashboard-template/documentation/'
-              target='_blank'
-            >
-              Template Documentation
-            </CardLink>{' '}
-            to understand where to go from here and how to use our template.
-          </CardText>
-        </CardBody>
-      </Card>
-
+      <Row className='match-height'>
+        <Col xl='12'>
+          <StatsCard cols={{ lg: '3', md: '4', sm: '6'}} />
+        </Col>
+      </Row>
+      <Row className='match-height'>
+        <Col sm='12'>
+          <Card title='Table Dashboard' code={tableHoverAnimation, tableResponsive} >
+          <CardHeader><CardTitle>Table Dashboard</CardTitle></CardHeader>
+            <TableDashboard />
+          </Card>
+        </Col>
+      </Row>
       <Card>
         <CardHeader>
           <CardTitle>Want to integrate JWT? 🔒</CardTitle>
