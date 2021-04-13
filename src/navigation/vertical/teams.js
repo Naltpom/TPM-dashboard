@@ -22,12 +22,6 @@ export default [
         navLink: '/team/members/list'
       },
       {
-        id: 'adriverCorpEdit',
-        title: 'Gestion (leader)',
-        icon: <Edit size={12} />,
-        navLink: '/team/members/edit'
-      },
-      {
         id: 'adriverCorpAdd',
         title: 'Invite (leader)',
         icon: <UserPlus size={12} />,
@@ -79,12 +73,6 @@ export default [
         title: 'Members',
         icon: <Users size={12} />,
         navLink: '#'
-      },
-      {
-        id: 'tpmEdit',
-        title: 'Gestion (leader)',
-        icon: <Edit size={12} />,
-        navLink: '/'
       },
       {
         id: 'tpmAdd',
