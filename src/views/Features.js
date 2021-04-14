@@ -89,7 +89,9 @@ const Features = () => {
                     </CardBody>
                 </CardAction>
             </Col>
-            <Col xl='4'>
+        </Row>
+        <Row>
+            <Col xl='4' className="order-12 order-xl-1">
                 <Row>
                     <Col xl='12'>
                         <CardAction actions='collapse' title={<b className="">Features Timeline</b>}>
@@ -100,7 +102,7 @@ const Features = () => {
                     </Col>
                 </Row>
             </Col>
-            <Col xl='8'>
+            <Col xl='8' className="order-1 order-xl-12">
                 <Row>
 
 
