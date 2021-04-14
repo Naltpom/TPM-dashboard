@@ -75,6 +75,10 @@ const Routes = [
     path: '/error',
     component: lazy(() => import('../../views/Error')),
     layout: 'BlankLayout'
+  },
+  {
+    path: '/features',
+    component: lazy(() => import('../../views/Features'))
   }
 ]
 
