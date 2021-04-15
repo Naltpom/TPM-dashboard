@@ -168,6 +168,20 @@ const Features = () => {
                                                 CDI
                                             </Badge>                                        
                                         </li>
+                                        <li>
+                                            <Badge color='warning' className='badge-glow mr-1 mb-1'>
+                                                <Star size={12} className='align-middle' />
+                                                <span className='align-middle ml-25'>WORKERS</span>
+                                            </Badge>
+                                            <Badge color='warning' className='mr-1 mb-1'>
+                                                <Star size={12} className='align-middle text-primary' />
+                                                <span className='align-middle ml-25'>DEV</span>
+                                            </Badge>
+                                            <Badge color='warning' className='mr-1 mb-1'>
+                                                <Star size={12} className='align-middle text-info' />
+                                                <span className='align-middle ml-25'>Design</span>
+                                            </Badge>                                    
+                                        </li>
                                     </ul>
 
                                 </CardText>
