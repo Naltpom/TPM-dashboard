@@ -59,41 +59,40 @@ const Features = () => {
     <div>
         <Row className='match-height'>
             <Col lg='6' xl='5'>
-                <CardAction actions='collapse' title={<b className="text-info">Gestion de projets web</b>}>
-                    <CardBody>
-                        <CardText>
-                            Permettre aux membres des teams de crée un projet et d'ajouter des features a developper, un product owner devras indiqué les spécificité, mes membre de la team devrons fournir des diagram uml pour confirmé que le cahier des charge correspond bien au attentes, puis les designer devrons proposé des maquette qui doivent etre validé par les dev et le product owner, puis les dev developpe, mettre en pre prod, le product owner, et les testeur test l'application, font leurs retour, si il y a des modifications a faire, les dev refont les changement remettent en pre production et quand tout les groupes sont satisfait, cloture de la feature en passage en production
-                        </CardText>
-                        <CardText>
-                            <h4>1. creation d'un projet</h4>
-                            <ul>
-                                <li>Product owner defini le projet avec le leader de la team</li>
-                                <li>le leader attribut au projet les membre</li>
-                                <li>Les designer produise les maquettes et validation par le product owner</li>
-                                <li>Les dev code et propose un pre-prod</li>
-                                <li>Les groupes test la feature</li>
-                                <li>Si il y a des incident on crée des tickets pour corrigé et retester</li>
-                                <li>Quand tout est satisfait on passe la feature en prod</li>
-                            </ul>
-                        </CardText>
-                        <CardText>
-                            <h4>2. creation d'une feature</h4>
-                            <ul>
-                                <li>Product owner defini la feature</li>
-                                <li>le leader peut attribut a la feature de nouveau membre plus precisement</li>
-                                <li>créeation de diagram et leurs validation par tout les groupes</li>
-                                <li>Les designer produise les maquettes et validation par le product owner</li>
-                                <li>Les dev code et propose un pre-prod</li>
-                                <li>Les groupes test la feature</li>
-                                <li>Si il y a des incident on crée des tickets pour corrigé et retester</li>
-                                <li>Quand tout est satisfait on passe la feature en prod</li>
-                            </ul>
-                        </CardText>
-                        <CardText className='text-muted text-right'>
-                            <small>Updated 14/04/0221</small>
-                        </CardText>
-                    </CardBody>
-                </CardAction>
+                {/* <Row className='match-height'>
+                    <Col xs='12'> */}
+                        <CardAction actions='collapse' title={<b className="text-info">Gestion de projets web</b>}>
+                            <CardBody>
+                                <CardText>
+                                    Permettre aux membres des teams de crée un projet et d'ajouter des features a developper, un product owner devras indiqué les spécificité, mes membre de la team devrons fournir des diagram uml pour confirmé que le cahier des charge correspond bien au attentes, puis les designer devrons proposé des maquette qui doivent etre validé par les dev et le product owner, puis les dev developpe, mettre en pre prod, le product owner, et les testeur test l'application, font leurs retour, si il y a des modifications a faire, les dev refont les changement remettent en pre production et quand tout les groupes sont satisfait, cloture de la feature en passage en production
+                                </CardText>
+                                <CardText>
+                                    <h4>1. creation d'un projet</h4>
+                                    <ul>
+                                        <li>Product owner defini le projet avec le leader de la team</li>
+                                        <li>le leader attribut au projet les membre</li>
+                                    </ul>
+                                </CardText>
+                                <CardText>
+                                    <h4>2. creation d'une feature</h4>
+                                    <ul>
+                                        <li>Product owner defini la feature</li>
+                                        <li>le leader peut attribut a la feature de nouveau membre plus precisement</li>
+                                        <li>créeation de diagram et leurs validation par tout les groupes</li>
+                                        <li>Les designer produise les maquettes et validation par le product owner</li>
+                                        <li>Les dev code et propose un pre-prod</li>
+                                        <li>Les groupes test la feature</li>
+                                        <li>Si il y a des incident on crée des tickets pour corrigé et retester</li>
+                                        <li>Quand tout est satisfait on passe la feature en prod</li>
+                                    </ul>
+                                </CardText>
+                                <CardText className='text-muted text-right'>
+                                    <small>Updated 14/04/0221</small>
+                                </CardText>
+                            </CardBody>
+                        </CardAction>
+                    {/* </Col>
+                </Row> */}
             </Col>
             <Col lg='6' xl='7'>
                 <Row className='match-height'>
