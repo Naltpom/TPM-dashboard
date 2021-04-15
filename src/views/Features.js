@@ -70,7 +70,7 @@ const Features = () => {
                                     <h4>1. creation d'un projet</h4>
                                     <ul>
                                         <li>Product owner defini le projet avec le leader de la team</li>
-                                        <li>le leader attribut au projet les membre</li>
+                                        <li>le leader attribut les membres au projet</li>
                                     </ul>
                                 </CardText>
                                 <CardText>
