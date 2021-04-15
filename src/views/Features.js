@@ -58,7 +58,7 @@ const Features = () => {
   return (
     <div>
         <Row className='match-height'>
-            <Col xl='6'>
+            <Col lg='6' xl='5'>
                 <CardAction actions='collapse' title={<b className="text-info">Gestion de projets web</b>}>
                     <CardBody>
                         <CardText>
@@ -95,7 +95,7 @@ const Features = () => {
                     </CardBody>
                 </CardAction>
             </Col>
-            <Col xl='6'>
+            <Col lg='6' xl='7'>
                 <Row className='match-height'>
                     <Col xs='12'>
                         <CardAction actions='collapse' title={<b className="text-info">Ticketing</b>}>
