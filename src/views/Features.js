@@ -64,7 +64,7 @@ const Features = () => {
                         <CardAction actions='collapse' title={<b className="text-info">Projets web et fonctionnalités</b>}>
                             <CardBody>
                                 <CardText>
-                                    Permettre aux membres des équipes de crée un projet et d'ajouter des fonctionnalités à développer.
+                                    Permettre aux membres des équipes de créer un projet et d'ajouter des fonctionnalités à développer.
                                 </CardText>
                                 <CardText>
                                     Un Product Owner devra indiquer les spécificités, les membres de l’équipe devrons alors fournir des diagrammes UML pour confirmer que le cahier des charges correspond bien aux attentes.
@@ -80,17 +80,17 @@ const Features = () => {
 
                                 </CardText>
                                 <CardText>
-                                    <h4>1. Creation d'un projet</h4>
+                                    <h4>1. Création d'un projet</h4>
                                     <ul>
                                         <li>Product Owner défini le projet avec le leader de l’équipe</li>
                                         <li>Le leader attribut les membres au projet</li>
                                     </ul>
                                 </CardText>
                                 <CardText>
-                                    <h4>2. Creation d'une feature</h4>
+                                    <h4>2. Création d'une fonctionnalité</h4>
                                     <ul>
                                         <li>Product Owner défini la fonctionnalité</li>
-                                        <li>Le leader peut attribut a la fonctionnalité de nouveau membre plus précisément</li>
+                                        <li>Le leader peut ajouter des membres hors du projet à la fonctionnalité</li>
                                         <li>Création de diagrammes et leurs validations par tous les groupes</li>
                                         <li>Le designer produise les maquettes et validation par le Product Owner</li>
                                         <li>Les dev code et propose une préprod</li>
