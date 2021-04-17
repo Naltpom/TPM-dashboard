@@ -12,32 +12,32 @@ const data = [
         color: 'info'
     },    
     {
-        title: <b className="text-primary">Gestion de team</b>,
+        title: <b className="text-primary">Equipes</b>,
         meta: 'for 01 december 2021',
         color: 'info'
     },    
     {
-        title: <b className="text-primary">Gestion de projets web</b>,
+        title: <b className="text-primary">Projets web et fonctionnalités</b>,
         meta: 'for 01 december 2021',
         color: 'info'
     },    
     {
-        title: <b className="text-primary">Gestion de labels</b>,
+        title: <b className="text-primary">Label et Super Label</b>,
         meta: 'for 01 december 2021',
         color: 'info'
     },   
     {
-        title: <b className="text-secondary">Contre rendu</b>,
+        title: <b className="text-secondary">Compte rendu</b>,
         meta: '2022 +',
         color: 'warning'
     },   
     {
-        title: <b className="text-secondary">Calendar</b>,
+        title: <b className="text-secondary">Calendrier</b>,
         meta: '2022 +',
         color: 'warning'
     },    
     {
-        title: <b className="text-secondary">Retrospective</b>,
+        title: <b className="text-secondary">Rétrospective</b>,
         meta: '2022 +',
         color: 'warning'
     },
@@ -61,29 +61,42 @@ const Features = () => {
             <Col lg='6' xl='5'>
                 {/* <Row className='match-height'>
                     <Col xs='12'> */}
-                        <CardAction actions='collapse' title={<b className="text-info">Gestion de projets web</b>}>
+                        <CardAction actions='collapse' title={<b className="text-info">Projets web et fonctionnalités</b>}>
                             <CardBody>
                                 <CardText>
-                                    Permettre aux membres des teams de crée un projet et d'ajouter des features a developper, un product owner devras indiqué les spécificité, mes membre de la team devrons fournir des diagram uml pour confirmé que le cahier des charge correspond bien au attentes, puis les designer devrons proposé des maquette qui doivent etre validé par les dev et le product owner, puis les dev developpe, mettre en pre prod, le product owner, et les testeur test l'application, font leurs retour, si il y a des modifications a faire, les dev refont les changement remettent en pre production et quand tout les groupes sont satisfait, cloture de la feature en passage en production
+                                    Permettre aux membres des équipes de crée un projet et d'ajouter des fonctionnalités à développer.
                                 </CardText>
                                 <CardText>
-                                    <h4>1. creation d'un projet</h4>
+                                    Un Product Owner devra indiquer les spécificités, les membres de l’équipe devrons alors fournir des diagrammes UML pour confirmer que le cahier des charges correspond bien aux attentes.
+                                </CardText>
+                                <CardText>
+                                    Les designers devront ainsi proposer des maquettes qui doivent être validé par les devs et le Product Owner, par la suite les devs développe, mettre en préprod.
+                                </CardText>
+                                <CardText>
+                                    Le Product Owner, et les testeur test l'application, font leurs retours, s’il y a des modifications à faire, les devs refont les changements remettent en préprod.
+                                </CardText>
+                                <CardText>
+                                    Quand tous les groupes sont satisfait, clôture de la fonctionnalité en passage en production.
+
+                                </CardText>
+                                <CardText>
+                                    <h4>1. Creation d'un projet</h4>
                                     <ul>
-                                        <li>Product owner defini le projet avec le leader de la team</li>
-                                        <li>le leader attribut les membres au projet</li>
+                                        <li>Product Owner défini le projet avec le leader de l’équipe</li>
+                                        <li>Le leader attribut les membres au projet</li>
                                     </ul>
                                 </CardText>
                                 <CardText>
-                                    <h4>2. creation d'une feature</h4>
+                                    <h4>2. Creation d'une feature</h4>
                                     <ul>
-                                        <li>Product owner defini la feature</li>
-                                        <li>le leader peut attribut a la feature de nouveau membre plus precisement</li>
-                                        <li>créeation de diagram et leurs validation par tout les groupes</li>
-                                        <li>Les designer produise les maquettes et validation par le product owner</li>
-                                        <li>Les dev code et propose un pre-prod</li>
-                                        <li>Les groupes test la feature</li>
-                                        <li>Si il y a des incident on crée des tickets pour corrigé et retester</li>
-                                        <li>Quand tout est satisfait on passe la feature en prod</li>
+                                        <li>Product Owner défini la fonctionnalité</li>
+                                        <li>Le leader peut attribut a la fonctionnalité de nouveau membre plus précisément</li>
+                                        <li>Création de diagrammes et leurs validations par tous les groupes</li>
+                                        <li>Le designer produise les maquettes et validation par le Product Owner</li>
+                                        <li>Les dev code et propose une préprod</li>
+                                        <li>Les groupes test la fonctionnalité</li>
+                                        <li>S’il y a des incidents on crée des tickets pour corriger et retester</li>
+                                        <li>Quand tout est satisfait on passe la fonctionnalité en prod</li>
                                     </ul>
                                 </CardText>
                                 <CardText className='text-muted text-right'>
@@ -100,7 +113,7 @@ const Features = () => {
                         <CardAction actions='collapse' title={<b className="text-info">Ticketing</b>}>
                             <CardBody>
                                 <CardText>
-                                    Permettre aux membres des teams de rapporté un incident ou des axes d'amelioration ou autre dans un outil de ticketing
+                                    Permettre aux membres des équipes de rapporter un incident, des axes d'amelioration ou autres dans un outil de ticket.
                                 </CardText>
                                 <CardText>
                                     Exemple : jira ...
@@ -112,11 +125,13 @@ const Features = () => {
                         </CardAction>
                     </Col>
                     <Col xs='12'>
-                        <CardAction actions='collapse' title={<b className="text-info">Gestion de team</b>}>
+                        <CardAction actions='collapse' title={<b className="text-info">Equipes</b>}>
                             <CardBody>
                                 <CardText>
-                                    Permettre la creation de team pour les projets, le leader doit pouvoir invité des email a rejoindre, ses email pourrons accepté de rejoindre la team, le leader pourras choisir les roles de chaque membre, entre membre, visiteur, client
-                                    etat lors de l'invitation : wating, quand l'utiisateur a accepter de rejoindre il passe en invited
+                                    Permettre la creation d’équipe pour les projets, le leader doit pouvoir inviter des emails à rejoindre, ses emails pourrons accepter de rejoindre l’équipe, le leader pourras choisir les roles de chaque membre, entre <b>|membre|</b>, <b>|visiteur|</b>, <b>|client|</b>.
+                                </CardText>
+                                <CardText>
+                                    Etat lors de l'invitation : <b>|waiting|</b>, quand l'utilisateur à accepter de rejoindre il passe en <b>|invited|</b>
                                 </CardText>
                                 <CardText className='text-muted text-right'>
                                     <small>Updated 14/04/0221</small>
@@ -125,10 +140,10 @@ const Features = () => {
                         </CardAction>
                     </Col>
                     <Col xl='12'>
-                        <CardAction actions='collapse' title={<b className="text-info">Gestion de label des membres</b>}>
+                        <CardAction actions='collapse' title={<b className="text-info">Label et Super Label</b>}>
                             <CardBody>
                                 <CardText>
-                                    Permettre au leader des teams de crée des <br/>- <b>label</b> pour regroupé ces membres <br/>- <b>super label</b> pour regrouper les label.
+                                    Permettre au leader des équipes de créer des <br/>- <b>|label|</b> pour regrouper ces membres <br/>- <b>|<Star size={12} className='align-middle' />super label|</b> pour regrouper les <b>|label|</b> ou <b>|<Star size={12} className='align-middle' />super label|</b>.
                                 </CardText>
                                 <CardText>
                                     <ul>
@@ -197,7 +212,7 @@ const Features = () => {
             <Col xl='4' className="order-12 order-xl-1">
                 <Row className='match-height'>
                     <Col xl='12'>
-                        <CardAction actions='collapse' title={<b className="">Features Timeline</b>}>
+                        <CardAction actions='collapse' title={<b className="">Fonctionnalités Timeline de gestion</b>}>
                             <CardBody>
                                 <Timeline data={data} />
                             </CardBody>
@@ -211,14 +226,14 @@ const Features = () => {
                         <CardAction actions='collapse' title={<b className="text-warning">Compte rendu</b>}>
                             <CardBody>
                                 <CardText>
-                                    Programer un rappel et effectuer un comte rendu d'activité.
+                                    Programmer un rappel et effectuer un compte rendu d'activité.
                                 </CardText>
                                 <CardText>
-                                    Le leader de team peut determine la frequence de cr pour: 
+                                    Le leader d'équipe peut détermine la fréquence de compte rendu pour :
                                     <ul>
-                                        <li>chaque rôle separement</li>
-                                        <li>chaque membre separement</li>
-                                        <li>chaque label separement</li>
+                                        <li>Chaque rôle séparément</li>
+                                        <li>Chaque membre séparément</li>
+                                        <li>Chaque label séparément</li>
                                     </ul>
                                 </CardText>
                                 <CardText className='text-muted text-right'>
@@ -229,10 +244,10 @@ const Features = () => {
                     </Col>
 
                     <Col  xl='6'>
-                        <CardAction actions='collapse' title={<b className="text-warning">Calendar</b>}>
+                        <CardAction actions='collapse' title={<b className="text-warning">Calendrier</b>}>
                             <CardBody>
                                 <CardText>
-                                    Calendar de developpement et de relolution de ticket avec les deadlines
+                                    Calendrier de developpement et de rélolution de tickets avec les deadlines.
                                 </CardText>
                                 <CardText>
                                     Exemple : retrometro...
@@ -247,7 +262,7 @@ const Features = () => {
                         <CardAction actions='collapse' title={<b className="text-warning">Chat messenger</b>}>
                             <CardBody>
                                 <CardText>
-                                    Permettre au utilisateur de crée, envoyé des messages a d'autre utilisateur
+                                    Permettre à l’utilisateur de créer, envoyer des messages a d'autre utilisateur ou groupe d’utilisateurs.
                                 </CardText>
                                 <CardText>
                                     Exemple : facebook, discord, instagram ...
@@ -262,7 +277,7 @@ const Features = () => {
                         <CardAction actions='collapse' title={<b className="text-warning">Video conference</b>}>
                             <CardBody>
                                 <CardText>
-                                    Permettre au utilisateur de crée, et rejoindre des call voix avec/sans video et partage d'ecran
+                                    Permettre à l’utilisateur de créer, et rejoindre des call voix avec/sans video et partage d'ecran.
                                 </CardText>
                                 <CardText>
                                     Exemple : discord, google meet...
@@ -274,10 +289,10 @@ const Features = () => {
                         </CardAction>
                     </Col>
                     <Col  xl='6'>
-                        <CardAction actions='collapse' title={<b className="text-warning">Retrospective</b>}>
+                        <CardAction actions='collapse' title={<b className="text-warning">Rétrospective</b>}>
                             <CardBody>
                                 <CardText>
-                                    Creation de retrospective pour les teams 
+                                    Création de rétrospective pour les équipes. 
                                 </CardText>
                                 <CardText>
                                     Exemple : retrometro...
