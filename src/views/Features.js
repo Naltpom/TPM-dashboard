@@ -7,12 +7,17 @@ import { Star } from 'react-feather'
 
 const data = [
     {
-        title: <b className="text-primary">Ticketing</b>,
+        title: <b className="text-primary">Equipes</b>,
         meta: 'for 01 december 2021',
         color: 'info'
-    },    
+    }, 
     {
-        title: <b className="text-primary">Equipes</b>,
+        title: <b className="text-primary">Label et Super Label</b>,
+        meta: 'for 01 december 2021',
+        color: 'info'
+    },
+    {
+        title: <b className="text-primary">Ticketing</b>,
         meta: 'for 01 december 2021',
         color: 'info'
     },    
@@ -21,11 +26,6 @@ const data = [
         meta: 'for 01 december 2021',
         color: 'info'
     },    
-    {
-        title: <b className="text-primary">Label et Super Label</b>,
-        meta: 'for 01 december 2021',
-        color: 'info'
-    },   
     {
         title: <b className="text-secondary">Compte rendu</b>,
         meta: '2022 +',
@@ -47,7 +47,7 @@ const data = [
         color: 'warning'
     },    
     {
-        title: <b className="text-secondary">Video conference</b>,
+        title: <b className="text-secondary">Visioconférence</b>,
         meta: '2022 +',
         color: 'warning'
     }
@@ -274,7 +274,7 @@ const Features = () => {
                         </CardAction>
                     </Col>
                     <Col  xl='6'>
-                        <CardAction actions='collapse' title={<b className="text-warning">Video conference</b>}>
+                        <CardAction actions='collapse' title={<b className="text-warning">Visioconférence</b>}>
                             <CardBody>
                                 <CardText>
                                     Permettre à l’utilisateur de créer, et rejoindre des call voix avec/sans video et partage d'ecran.
