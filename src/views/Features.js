@@ -67,17 +67,16 @@ const Features = () => {
                                     Permettre aux membres des équipes de créer un projet et d'ajouter des fonctionnalités à développer.
                                 </CardText>
                                 <CardText>
-                                    Un Product Owner devra indiquer les spécificités, les membres de l’équipe devrons alors fournir des diagrammes UML pour confirmer que le cahier des charges correspond bien aux attentes.
+                                    Un Product Owner devra indiquer les spécificités, les membres de l’équipe devront alors fournir des diagrammes UML pour confirmer que le cahier des charges correspond bien aux attentes.
                                 </CardText>
                                 <CardText>
-                                    Les designers devront ainsi proposer des maquettes qui doivent être validé par les devs et le Product Owner, par la suite les devs développe, mettre en préprod.
+                                    Les designers soumettront des maquettes qui devront au préalable être validées par les devs et le Product Owner, par la suite les devs développent et passent la fonctionnalité en préprod.
                                 </CardText>
                                 <CardText>
-                                    Le Product Owner, et les testeur test l'application, font leurs retours, s’il y a des modifications à faire, les devs refont les changements remettent en préprod.
+                                    Le Product Owner et les testeurs test l'application, font leurs retours, s’il y a des modifications à faire, les devs font les modifications nécessaires et remettent en préprod.
                                 </CardText>
                                 <CardText>
-                                    Quand tous les groupes sont satisfait, clôture de la fonctionnalité en passage en production.
-
+                                    Quand tous les groupes font un retour positif sur la fonctionnalité, cette dernière passe en production. 
                                 </CardText>
                                 <CardText>
                                     <h4>1. Création d'un projet</h4>
@@ -89,14 +88,14 @@ const Features = () => {
                                 <CardText>
                                     <h4>2. Création d'une fonctionnalité</h4>
                                     <ul>
-                                        <li>Product Owner défini la fonctionnalité</li>
-                                        <li>Le leader peut ajouter des membres hors du projet à la fonctionnalité</li>
-                                        <li>Création de diagrammes et leurs validations par tous les groupes</li>
-                                        <li>Le designer produise les maquettes et validation par le Product Owner</li>
-                                        <li>Les dev code et propose une préprod</li>
+                                        <li>Le Product Owner défini le périmétre de la fonctionnalité</li>
+                                        <li>Le leader peut ajouter des membres externes pour collaborer au développement de la  fonctionnalité.</li>
+                                        <li>La création de diagrammes et leurs validations par tous les groupes</li>
+                                        <li>Le designer produit les maquettes et le Product Owner valide ces dernières</li>
+                                        <li>Les Devs codent et envoient la fonctionnalité en préprod</li>
                                         <li>Les groupes test la fonctionnalité</li>
-                                        <li>S’il y a des incidents on crée des tickets pour corriger et retester</li>
-                                        <li>Quand tout est satisfait on passe la fonctionnalité en prod</li>
+                                        <li>Si des bugs sont rencontrés pendant la phase de test, un ticket sera créé pour permettre de corriger ces derniers</li>
+                                        <li>Quand le résultat est satisfaisant la fonctionnalité passe en prod</li>
                                     </ul>
                                 </CardText>
                                 <CardText className='text-muted text-right'>
